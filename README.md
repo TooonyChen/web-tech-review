@@ -234,18 +234,21 @@ console.log(factorial(5)); // 输出 120
 - 用法:
 
 1) 通过正则表达式字面量创建
+通过正则表达式字面量创建：使用斜杠符号 `/` 将正则表达式包裹起来，后面可以跟随一些标志（flags）来修改匹配的行为。
 
 ```js
 let regex = /pattern/flags;
 ```
 
 2) 通过RegExp对象构造函数创建
+通过RegExp对象构造函数创建：可以使用RegExp对象的构造函数来创建正则表达式，传入要匹配的模式和相应的标志。
 
 ```js
 let regex = new RegExp('pattern', 'flags');
 ```
 
 3) 测试匹配
+可以使用 `test()` 方法来测试一个字符串是否匹配了给定的正则表达式模式，它会返回一个布尔值（true或false），表示是否有匹配。
 
 ```js
 regex.test(str); // 返回true或false
@@ -256,6 +259,13 @@ regex.test(str); // 返回true或false
 ```js
 str.match(regex); // 查找匹配
 str.replace(regex, newStr); // 替换匹配
+```
+
+举个例子，假设你想要检查一个字符串是否包含 "hello" 这个单词，你可以这样使用正则表达式：
+```js
+let regex = /hello/;
+let str = "hello world";
+console.log(regex.test(str)); // 输出 true
 ```
 
 - 例子: 匹配Email地址
