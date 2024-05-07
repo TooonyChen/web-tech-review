@@ -1,5 +1,4 @@
-# web-tech-review
-## Chapter 2
+# Chapter 2
 
 1. 块级元素
    块级元素在浏览器中显示时会独占一行,常用于文档结构和布局。
@@ -127,7 +126,7 @@
 
  
 
-## Chapter 3
+# Chapter 3
 
 **知识点1: 单一元素类型选择器**
 
@@ -177,7 +176,7 @@ h1,h2,h3,h4,h5,h6 { background-color:purple }
 
  
 
-## Chapter 4
+# Chapter 4
 
 好的,根据你提供的Chapter 4 Client-Side Programming-JavaScript幻灯片,以下是你需要复习的JavaScript函数和正则表达式相关知识点:
 
@@ -266,7 +265,7 @@ let emailRegex = /\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}\b/;
 emailRegex.test('test@example.com'); // true
 ```
 
-## Chapter 5
+# Chapter 5
 
 好的,根据你提供的Chapter 5 Host Objects-Browsers and the DOM幻灯片,以下是你需要复习的DOM、HTML内在事件属性onload和window.alert()函数相关知识点:
 
@@ -356,8 +355,26 @@ function show(eltId, URL) {
     return;
 }
 ```
+1. 这是一个HTML文件,包含了文档类型声明、HTML、head和body元素。
 
-## Chapter 6
+2. `<script src="rollover.js"></script>`引入了一个外部JavaScript文件rollover.js。
+
+3. `<meta>` 元素告诉浏览器本文档中的事件处理程序使用JavaScript编写。
+
+4. `<img>`元素定义了一个图像,通过src属性指定了初始图片文件。
+
+5. `id="img1"`为图像元素指定了一个唯一ID,以便JavaScript代码可以引用它。
+
+6. `onmouseover`和`onmouseout`是HTML事件处理属性,分别在鼠标移入和移出图像时触发。它们调用了JavaScript函数`show()`并传入图像ID和新的图片URL作为参数。
+
+7. rollover.js文件定义了`show()`函数:
+    - 首先使用`document.getElementById()`获取ID为`eltId`的元素对象
+    - 然后使用`elt.setAttribute("src", URL)`设置该元素的src属性为新的图片URL
+    - 从而实现了在鼠标移入/移出时切换图片的效果
+
+这个示例展示了如何结合使用HTML和JavaScript来添加交互行为。通过操作DOM元素的属性,可以动态更新网页内容,提高用户体验。
+
+# Chapter 6
 
 **知识点1: Servlet生命周期**
 
@@ -629,6 +646,5 @@ public class VisitorCounter extends HttpServlet
 }
 
 ```
-
 
 
