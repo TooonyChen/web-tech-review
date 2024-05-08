@@ -1,3 +1,50 @@
+# Chapter 1
+**知识点1：telnet命令行的用法**
+- 定义：Telnet是一种网络协议，允许用户在本地计算机上使用命令行接口远程登录到远程主机，并执行命令。
+- 用法：telnet [hostname or IP address] [port]。通过telnet命令，用户可以连接到远程服务器并发送各种命令。
+- 例子：telnet www.example.com 80。这将连接到端口80（HTTP端口）上的www.example.com，并允许用户手动发送HTTP请求。
+
+**知识点2：localhost的含义**
+- 定义：localhost是一个标准主机名，通常用于识别本地计算机或本地主机。它指向本地主机IP地址，通常是127.0.0.1。
+- 用法：在网络通信中，localhost可以用作目标主机名，表示通信将在本地主机上进行。
+- 例子：当在浏览器中输入http://localhost时，浏览器将尝试连接到本地计算机上运行的Web服务器。
+
+**知识点3：HTTP请求/响应消息的构成**
+- 定义：HTTP请求和响应消息是客户端和服务器之间交换的数据，用于请求和传送Web页面和资源。
+- 用法：HTTP请求通常由请求行、请求头、空行（用于分隔请求头和请求体）、请求体组成。而HTTP响应通常由状态行、响应头、空行、响应体组成。
+- 例子：HTTP请求消息示例：
+```
+GET /index.html HTTP/1.1
+Host: www.example.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+```
+HTTP响应消息示例：
+```
+HTTP/1.1 200 OK
+Date: Sun, 08 May 2024 12:00:00 GMT
+Server: Apache/2.4.38 (Unix)
+Last-Modified: Tue, 01 Jan 2024 00:00:00 GMT
+Content-Type: text/html
+Content-Length: 127
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Example Page</title>
+</head>
+<body>
+    <h1>Hello, World!</h1>
+</body>
+</html>
+```
+
+**知识点4：Web浏览器/服务器的主要责任和功能以及其之间的交互**
+- 定义：Web浏览器负责向用户显示Web页面，解释并呈现HTML、CSS和JavaScript。Web服务器则负责存储和传送Web内容，处理来自客户端的请求，并向客户端发送响应。
+- 用法：Web浏览器通过发送HTTP请求到Web服务器请求页面和资源，然后接收并呈现Web服务器返回的HTML、CSS、JavaScript等内容。
+- 例子：当用户在浏览器中输入URL并按下回车键时，浏览器将发送HTTP请求到相应的Web服务器，服务器将处理请求并返回相应的Web页面或资源，浏览器接收并显示该页面。
+
+
 # Chapter 2
 
 1. 块级元素
