@@ -276,6 +276,7 @@ h1,h2,h3,h4,h5,h6 { background-color:purple }
 ## Chapter 4: Client-Side Programming-JavaScript
 
 考试题：Using a regexp instance, write the JavaScript code to test if a string value start with “MUST” , followed by 20 digits and end with 0-10 words characters
+
 解答：
 
 目的：
