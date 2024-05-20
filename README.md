@@ -279,8 +279,6 @@ h1,h2,h3,h4,h5,h6 { background-color:purple }
 
 解答：
 
-目的：
-
 验证字符串是否符合以下格式：
 
 * 以 "MUST" 开头
@@ -331,6 +329,153 @@ for (const testString of testStrings) {
 总结：
 
 该代码有效地检查了字符串是否符合指定格式，并提供了测试用例来演示其功能。
+
+### 正则表达式
+
+在JavaScript中，正则表达式（Regular Expressions，简称regex）是一种用于匹配字符串的模式。正则表达式的用法非常广泛，可以用于搜索、替换、验证和解析字符串等操作。以下是JavaScript中常见的正则表达式符号及其用法：
+
+#### 基本符号
+
+1. **`.`**：匹配除换行符之外的任何单个字符。
+   ```javascript
+   /./.test('a'); // true
+   ```
+
+2. **`\d`**：匹配任何数字，相当于`[0-9]`。
+   ```javascript
+   /\d/.test('5'); // true
+   ```
+
+3. **`\D`**：匹配任何非数字字符，相当于`[^0-9]`。
+   ```javascript
+   /\D/.test('a'); // true
+   ```
+
+4. **`\w`**：匹配任何单个字母、数字或下划线，相当于`[a-zA-Z0-9_]`。
+   ```javascript
+   /\w/.test('a'); // true
+   ```
+
+5. **`\W`**：匹配任何非字母、数字或下划线字符，相当于`[^a-zA-Z0-9_]`。
+   ```javascript
+   /\W/.test('!'); // true
+   ```
+
+6. **`\s`**：匹配任何空白字符，包括空格、制表符、换页符等，相当于`[ \t\r\n\f]`。
+   ```javascript
+   /\s/.test(' '); // true
+   ```
+
+7. **`\S`**：匹配任何非空白字符，相当于`[^ \t\r\n\f]`。
+   ```javascript
+   /\S/.test('a'); // true
+   ```
+
+8. **`[]`**：字符类，匹配方括号内的任意一个字符。
+   ```javascript
+   /[aeiou]/.test('e'); // true
+   ```
+
+9. **`[^]`**：否定字符类，匹配不在方括号内的任意字符。
+   ```javascript
+   /[^aeiou]/.test('b'); // true
+   ```
+
+#### 量词
+
+1. **`*`**：匹配前面的元素零次或多次。
+   ```javascript
+   /a*/.test('aaa'); // true
+   ```
+
+2. **`+`**：匹配前面的元素一次或多次。
+   ```javascript
+   /a+/.test('aaa'); // true
+   ```
+
+3. **`?`**：匹配前面的元素零次或一次。
+   ```javascript
+   /a?/.test('a'); // true
+   ```
+
+4. **`{n}`**：匹配前面的元素恰好n次。
+   ```javascript
+   /a{3}/.test('aaa'); // true
+   ```
+
+5. **`{n,}`**：匹配前面的元素至少n次。
+   ```javascript
+   /a{2,}/.test('aaaa'); // true
+   ```
+
+6. **`{n,m}`**：匹配前面的元素至少n次，至多m次。
+   ```javascript
+   /a{2,3}/.test('aaa'); // true
+   ```
+
+#### 位置符
+
+1. **`^`**：匹配字符串的开始位置。
+   ```javascript
+   /^a/.test('apple'); // true
+   ```
+
+2. **`$`**：匹配字符串的结束位置。
+   ```javascript
+   /a$/.test('banana'); // true
+   ```
+
+#### 分组和引用
+
+1. **`()`**：分组，将多个字符组合为一个单元，并捕获匹配的内容。
+   ```javascript
+   /(abc)/.test('abc'); // true
+   ```
+
+2. **`\n`**：反向引用，匹配之前的捕获组。
+   ```javascript
+   /(a)\1/.test('aa'); // true
+   ```
+
+#### 逻辑或
+
+1. **`|`**：逻辑或，匹配`|`两边的任意一个模式。
+   ```javascript
+   /a|b/.test('a'); // true
+   ```
+
+#### 特殊字符转义
+
+1. **`\`**：用于转义特殊字符，使其作为普通字符使用。
+   ```javascript
+   /\./.test('.'); // true
+   ```
+
+#### 示例代码
+
+```javascript
+// 匹配以数字开头的字符串
+let regex1 = /^\d/;
+console.log(regex1.test('123abc')); // true
+
+// 匹配以字母结尾的字符串
+let regex2 = /[a-zA-Z]$/;
+console.log(regex2.test('123abc')); // true
+
+// 匹配包含数字的字符串
+let regex3 = /\d/;
+console.log(regex3.test('abc123')); // true
+
+// 匹配包含至少一个字母的字符串
+let regex4 = /[a-zA-Z]+/;
+console.log(regex4.test('123abc')); // true
+
+// 匹配不包含空白字符的字符串
+let regex5 = /^\S+$/;
+console.log(regex5.test('abc123')); // true
+```
+
+这些是JavaScript中正则表达式的常用符号和用法。正则表达式功能强大，可以根据需要灵活组合使用，实现复杂的字符串匹配和处理。
 
 **知识点1: JavaScript函数**
 
