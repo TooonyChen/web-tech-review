@@ -3,6 +3,7 @@
 
 ## Chapter 1: Web Essentials - Clients Servers and Communication
 
+### 期中考出现过的
 **Typical browser-server interaction**
 - User enters Web address in browser
 - Browser uses DNS to locate IP address
@@ -49,17 +50,17 @@ Basic functionality:
 
 
 
-**知识点1：telnet命令行的用法**
+### 知识点1：telnet命令行的用法
 - 定义：Telnet是一种网络协议，允许用户在本地计算机上使用命令行接口远程登录到远程主机，并执行命令。
 - 用法：telnet [hostname or IP address] [port]。通过telnet命令，用户可以连接到远程服务器并发送各种命令。
 - 例子：telnet www.example.com 80。这将连接到端口80（HTTP端口）上的www.example.com，并允许用户手动发送HTTP请求。
 
-**知识点2：localhost的含义**
+### 知识点2：localhost的含义
 - 定义：localhost是一个标准主机名，通常用于识别本地计算机或本地主机。它指向本地主机IP地址，通常是127.0.0.1。
 - 用法：在网络通信中，localhost可以用作目标主机名，表示通信将在本地主机上进行。
 - 例子：当在浏览器中输入 `http://localhost` 时，浏览器将尝试连接到本地计算机上运行的Web服务器。
 
-**知识点3：HTTP请求/响应消息的构成**
+### 知识点3：HTTP请求/响应消息的构成
 - 定义：HTTP请求和响应消息是客户端和服务器之间交换的数据，用于请求和传送Web页面和资源。
 - 用法：HTTP请求通常由请求行、请求头、空行（用于分隔请求头和请求体）、请求体组成。而HTTP响应通常由状态行、响应头、空行、响应体组成。
 - 例子：HTTP请求消息示例：
@@ -89,7 +90,7 @@ Content-Length: 127
 </html>
 ```
 
-**知识点4：Web浏览器/服务器的主要责任和功能以及其之间的交互**
+### 知识点4：Web浏览器/服务器的主要责任和功能以及其之间的交互
 - 定义：Web浏览器负责向用户显示Web页面，解释并呈现HTML、CSS和JavaScript。Web服务器则负责存储和传送Web内容，处理来自客户端的请求，并向客户端发送响应。
 - 用法：Web浏览器通过发送HTTP请求到Web服务器请求页面和资源，然后接收并呈现Web服务器返回的HTML、CSS、JavaScript等内容。
 - 例子：当用户在浏览器中输入URL并按下回车键时，浏览器将发送HTTP请求到相应的Web服务器，服务器将处理请求并返回相应的Web页面或资源，浏览器接收并显示该页面。
@@ -97,7 +98,7 @@ Content-Length: 127
 
 ## Chapter 2: Markup Languages - XHTML 1.0.ppt
 
-1. 块级元素
+### 1. 块级元素
    块级元素在浏览器中显示时会独占一行,常用于文档结构和布局。
 
 - `<p>`表示一个段落
@@ -122,7 +123,7 @@ Content-Length: 127
 </div>
 ```
 
-2. 内联元素
+### 2. 内联元素
    内联元素通常出现在块级元素内部,不会打断文本流。
 
 - `<span>`是通用的内联容器,常用于对文本应用样式
@@ -138,7 +139,7 @@ Content-Length: 127
 <p>这是<strong>重要的</strong>信息。</p>
 ```
 
-3. 列表元素
+### 3. 列表元素
    列表元素用于创建项目列表,可以是有序、无序或定义列表。
 
 - `<ul>`表示无序列表,`<li>`表示列表项
@@ -164,7 +165,7 @@ Content-Length: 127
 </dl>
 ```
 
-4. 表格元素
+### 4. 表格元素
    表格元素用于在网页中显示表格数据。
 
 - `<table>`表示一个表格
@@ -187,7 +188,7 @@ Content-Length: 127
 </table>
 ```
 
-5. 表单元素
+### 5. 表单元素
    表单用于收集用户输入并提交到服务器。
 
 - `<form>`表示一个表单,action属性指定提交URL
@@ -225,7 +226,7 @@ Content-Length: 127
 
 ## Chapter 3: Style Sheets - CSS
 
-**知识点1: 单一元素类型选择器**
+### 知识点1: 单一元素类型选择器
 
 - 定义: 使用单一HTML元素标签作为选择器,如p { font-size:smaller; letter-spacing:1em }
 - 用法: 选择页面上所有该类型的HTML元素,并对它们应用相同的样式
@@ -237,7 +238,7 @@ p { font-size:smaller; letter-spacing:1em }
 
 这条规则将应用于页面上所有的`<p>`段落元素
 
-**知识点2: 多元素类型选择器**
+### 知识点2: 多元素类型选择器
 
 - 定义: 使用多个HTML元素标签作为选择器,用逗号分隔,如h1,h2,h3,h4,h5,h6 { background-color:purple }
 - 用法: 选择页面上所列出的多种类型的HTML元素,并对它们应用相同的样式
@@ -251,7 +252,7 @@ h1,h2,h3,h4,h5,h6 { background-color:purple }
 
 除了上述两个你提到的知识点,幻灯片中还介绍了其他几种选择器类型,我也总结如下:
 
-**知识点3: 全元素类型选择器**
+### 知识点3: 全元素类型选择器
 
 - 定义: 使用通配符`*`作为选择器,选择页面上所有元素
 - 用法: 对页面上所有元素应用相同的样式
@@ -261,7 +262,7 @@ h1,h2,h3,h4,h5,h6 { background-color:purple }
 * { font-weight:bold }
 ```
 
-**知识点4: 特定元素ID选择器**
+### 知识点4: 特定元素ID选择器
 
 - 定义: 使用`#`加上元素的id属性值作为选择器,如`#p1, #p3 { background-color:aqua }`
 - 用法: 选择具有指定id的元素,并对它们应用样式
@@ -275,7 +276,9 @@ h1,h2,h3,h4,h5,h6 { background-color:purple }
 
 ## Chapter 4: Client-Side Programming-JavaScript
 
-考试题：Using a regexp instance, write the JavaScript code to test if a string value start with “MUST” , followed by 20 digits and end with 0-10 words characters
+### 考试题
+
+Using a regexp instance, write the JavaScript code to test if a string value start with “MUST” , followed by 20 digits and end with 0-10 words characters
 
 解答：
 
@@ -477,7 +480,7 @@ console.log(regex5.test('abc123')); // true
 
 这些是JavaScript中正则表达式的常用符号和用法。正则表达式功能强大，可以根据需要灵活组合使用，实现复杂的字符串匹配和处理。
 
-**知识点1: JavaScript函数**
+### 知识点1: JavaScript函数
 
 - 定义: 函数是一段可重复使用的代码块,可以接受输入参数,执行特定操作,并返回结果。
 - 用法:
@@ -508,7 +511,7 @@ function add(a, b) {
 // 函数调用
 let sum = add(2, 3); // sum = 5
 ```
-**知识点2: 递归函数**
+### 知识点2: 递归函数
 
 - 定义: 递归函数是一种函数在其函数体内直接或间接调用自身的函数。
 - 用法: 递归函数通常有一个终止条件,当满足条件时递归结束,否则会无限循环下去。
@@ -525,7 +528,7 @@ function factorial(n) {
 
 console.log(factorial(5)); // 输出 120
 ```
-**知识点3: JavaScript正则表达式**
+### 知识点3: JavaScript正则表达式
 
 - 定义: 正则表达式是用于匹配字符串中字符组合的模式。
 - 用法:
@@ -574,9 +577,9 @@ emailRegex.test('test@example.com'); // true
 
 ## Chapter 5: Host Objects-Browsers and the DOM
 
-好的,根据你提供的Chapter 5 Host Objects-Browsers and the DOM幻灯片,以下是你需要复习的DOM、HTML内在事件属性onload和window.alert()函数相关知识点:
+根据Chapter 5 Host Objects-Browsers and the DOM幻灯片,需要复习的DOM、HTML内在事件属性onload和window.alert()函数相关知识点:
 
-**知识点1: DOM (Document Object Model)**
+### 知识点1: DOM (Document Object Model)
 
 - 定义: DOM是一个应用程序编程接口(API),允许程序和脚本动态访问和更新HTML(或XML)文档的内容、结构和样式。
 - 用法: 通过DOM,JavaScript可以访问HTML文档的所有元素,并对其进行操作,例如修改元素的内容、属性、样式等。主要通过document对象及其子对象(Element对象)来实现。
@@ -594,7 +597,7 @@ elem.style.color = "red";
 elem.style.backgroundColor = "#ccc";
 ```
 
-**知识点2: HTML内在事件属性onload**
+### 知识点2: HTML内在事件属性onload
 
 - 定义: onload是HTML的一个内在事件属性,当页面或某个资源完成加载时触发。
 - 用法: onload事件属性可以添加到<body>或<img>等元素上,当相应的资源加载完成时,会执行指定的JavaScript代码。
@@ -617,7 +620,7 @@ elem.style.backgroundColor = "#ccc";
 <img src="loading.gif" onload="showContent()" />
 ```
 
-**知识点3: window.alert()函数**
+### 知识点3: window.alert()函数
 
 - 定义: alert()是浏览器提供的一个宿主对象函数,用于在页面上显示一个带有指定消息和一个确定按钮的对话框。
 - 用法: alert(msg)函数接受一个字符串参数作为要显示的消息内容。显示对话框后,脚本会暂停执行,直到用户点击确定按钮。
@@ -628,7 +631,7 @@ window.alert("Hello World!");
 alert("这是一条警告消息");
 ```
 
-老师PPT放的示例代码：
+### 老师PPT放的示例代码：
 
 好的,这段代码展示了如何使用JavaScript操作HTML文档对象模型(DOM)来实现鼠标滑过图片时切换图片的效果。我将打印出代码并解释每一部分:
 
@@ -683,7 +686,7 @@ function show(eltId, URL) {
 
 ## Chapter 6: Server-side Programming-Java Servlets
 
-**知识点1: Servlet生命周期**
+### 知识点1: Servlet生命周期
 
 - 定义: Servlet生命周期描述了Servlet从创建到销毁的整个过程,包括实例化、初始化、服务和销毁四个阶段。
 - 用法:
@@ -722,7 +725,7 @@ function show(eltId, URL) {
   }
   ```
 
-**知识点2: `HttpServletRequest`和`HttpServletResponse`**
+### 知识点2: `HttpServletRequest`和`HttpServletResponse`
 
 - 定义: HttpServletRequest封装了客户端发送的HTTP请求信息,HttpServletResponse用于构建对客户端的响应。
 - 用法:
@@ -750,7 +753,7 @@ function show(eltId, URL) {
   out.println("Hello World!");
   ```
 
-**知识点3: Servlet会话跟踪**
+### 知识点3: Servlet会话跟踪
 
 - 定义: 会话跟踪是Web应用程序在多次请求之间保持状态的机制。
 - 用法:
@@ -775,7 +778,7 @@ function show(eltId, URL) {
   Integer visitCount = (Integer)session.getAttribute("visits");
   ```
 
-**注释1:**
+#### 注释1:
 
 ```java
 /* 
@@ -812,7 +815,7 @@ public class HelloCounter extends HttpServlet {
 }
 ```
 
-**注释2:**
+#### 注释2:
 
 ```java
 // 这行代码获取当前HTTP请求的会话对象,如果不存在则创建一个新的会话
@@ -829,7 +832,7 @@ if (session.isNew()) {
 
 
 
-**完整的HelloCounter**
+#### 完整的HelloCounter
 
 ```java
 import java.io.*;
@@ -891,7 +894,7 @@ public class HelloCounter extends HttpServlet
 
 
 
-**完整的VisitorCounter**
+#### 完整的VisitorCounter
 
 ```java
 import java.io.*;
