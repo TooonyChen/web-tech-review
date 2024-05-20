@@ -1,7 +1,7 @@
 # SE121: Web Technology - Review
 
 
-## Chapter 1
+## Chapter 1: Web Essentials - Clients Servers and Communication
 
 **Typical browser-server interaction**
 - User enters Web address in browser
@@ -95,7 +95,7 @@ Content-Length: 127
 - 例子：当用户在浏览器中输入URL并按下回车键时，浏览器将发送HTTP请求到相应的Web服务器，服务器将处理请求并返回相应的Web页面或资源，浏览器接收并显示该页面。
 
 
-## Chapter 2
+## Chapter 2: Markup Languages - XHTML 1.0.ppt
 
 1. 块级元素
    块级元素在浏览器中显示时会独占一行,常用于文档结构和布局。
@@ -223,7 +223,7 @@ Content-Length: 127
 
  
 
-## Chapter 3
+## Chapter 3: Style Sheets - CSS
 
 **知识点1: 单一元素类型选择器**
 
@@ -273,9 +273,63 @@ h1,h2,h3,h4,h5,h6 { background-color:purple }
 
  
 
-## Chapter 4
+## Chapter 4: Client-Side Programming-JavaScript
 
-好的,根据你提供的Chapter 4 Client-Side Programming-JavaScript幻灯片,以下是你需要复习的JavaScript函数和正则表达式相关知识点:
+考试题：Using a regexp instance, write the JavaScript code to test if a string value start with “MUST” , followed by 20 digits and end with 0-10 words characters
+解答：
+
+目的：
+
+验证字符串是否符合以下格式：
+
+* 以 "MUST" 开头
+* 后跟 20 个数字
+* 以 0 到 10 个单词字符结尾
+
+代码详解：
+
+```javascript
+function isValidString(str) {
+  // 正则表达式模式匹配格式
+  const pattern = /^MUST\d{20}[\w]{0,10}$/;
+  return pattern.test(str);
+}
+
+// 测试用例
+const testStrings = [
+  "MUST12345678901234567890abc",  // 有效
+  "MUST123456789012345678",       // 无效（缺少尾部字符）
+  "MUST1234a5678901234567890",     // 无效（包含非数字字符）
+  "notMUST12345678901234567890",   // 无效（不以 MUST 开头）
+];
+
+for (const testString of testStrings) {
+  console.log(`${testString} is valid: ${isValidString(testString)}`);
+}
+```
+
+1. `isValidString` 函数：
+
+* 接收字符串 `str` 作为参数。
+* 定义正则表达式模式 `pattern`，用于匹配字符串格式：
+    * `^`: 匹配字符串开头
+    * `MUST`: 匹配字面字符 "MUST"
+    * `\d{20}`: 匹配 20 个连续数字
+    * `[\w]{0,10}`: 匹配 0 到 10 个单词字符（字母、数字、下划线）
+    * `$`: 匹配字符串结尾
+* 使用 `pattern.test(str)` 方法测试字符串 `str` 是否符合模式。
+    * 如果匹配，返回 `true`；否则，返回 `false`。
+
+2. 测试用例：
+
+* 定义测试字符串数组 `testStrings`，包含多种格式的字符串。
+* 使用循环遍历每个测试字符串 `testString`：
+    * 调用 `isValidString(testString)` 获取验证结果。
+    * 将测试字符串和验证结果输出到控制台。
+
+总结：
+
+该代码有效地检查了字符串是否符合指定格式，并提供了测试用例来演示其功能。
 
 **知识点1: JavaScript函数**
 
@@ -372,7 +426,7 @@ let emailRegex = /\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}\b/;
 emailRegex.test('test@example.com'); // true
 ```
 
-## Chapter 5
+## Chapter 5: Host Objects-Browsers and the DOM
 
 好的,根据你提供的Chapter 5 Host Objects-Browsers and the DOM幻灯片,以下是你需要复习的DOM、HTML内在事件属性onload和window.alert()函数相关知识点:
 
@@ -481,7 +535,7 @@ function show(eltId, URL) {
 
 这个示例展示了如何结合使用HTML和JavaScript来添加交互行为。通过操作DOM元素的属性,可以动态更新网页内容,提高用户体验。
 
-## Chapter 6
+## Chapter 6: Server-side Programming-Java Servlets
 
 **知识点1: Servlet生命周期**
 
