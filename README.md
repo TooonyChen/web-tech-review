@@ -48,7 +48,8 @@ Basic functionality:
 - Map type of resource to appropriate MIME type and use it to set Content-Type header in HTTP response
 - Log information about the request and response
 
-
+**Escape Character in Telnet**
+It shows `Escape character is '^]'` then the escape character is `Ctrl + ]`
 
 ### 知识点1：telnet命令行的用法
 - 定义：Telnet是一种网络协议，允许用户在本地计算机上使用命令行接口远程登录到远程主机，并执行命令。
