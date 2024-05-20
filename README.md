@@ -49,6 +49,7 @@ Basic functionality:
 - Log information about the request and response
 
 **Escape Character in Telnet**
+
 It shows `Escape character is '^]'` then the escape character is `Ctrl + ]`
 
 ### 知识点1：telnet命令行的用法
