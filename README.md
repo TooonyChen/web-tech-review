@@ -52,12 +52,12 @@ Basic functionality:
 
 ### 知识点1：telnet命令行的用法
 - 定义：Telnet是一种网络协议，允许用户在本地计算机上使用命令行接口远程登录到远程主机，并执行命令。
-- 用法：telnet [hostname or IP address] [port]。通过telnet命令，用户可以连接到远程服务器并发送各种命令。
-- 例子：telnet www.example.com 80。这将连接到端口80（HTTP端口）上的www.example.com，并允许用户手动发送HTTP请求。
+- 用法：`telnet [hostname or IP address] [port]`。通过telnet命令，用户可以连接到远程服务器并发送各种命令。
+- 例子：`telnet www.example.com 80`。这将连接到端口80（HTTP端口）上的`www.example.com`，并允许用户手动发送HTTP请求。
 
 ### 知识点2：localhost的含义
-- 定义：localhost是一个标准主机名，通常用于识别本地计算机或本地主机。它指向本地主机IP地址，通常是127.0.0.1。
-- 用法：在网络通信中，localhost可以用作目标主机名，表示通信将在本地主机上进行。
+- 定义：`localhost`是一个标准主机名，通常用于识别本地计算机或本地主机。它指向本地主机IP地址，通常是`127.0.0.1`。
+- 用法：在网络通信中，`localhost`可以用作目标主机名，表示通信将在本地主机上进行。
 - 例子：当在浏览器中输入 `http://localhost` 时，浏览器将尝试连接到本地计算机上运行的Web服务器。
 
 ### 知识点3：HTTP请求/响应消息的构成
