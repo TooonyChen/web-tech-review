@@ -228,7 +228,7 @@ Content-Length: 127
 
 ### 知识点1: 单一元素类型选择器
 
-- 定义: 使用单一HTML元素标签作为选择器,如p { font-size:smaller; letter-spacing:1em }
+- 定义: 使用单一HTML元素标签作为选择器,如`p { font-size:smaller; letter-spacing:1em }`
 - 用法: 选择页面上所有该类型的HTML元素,并对它们应用相同的样式
 - 例子:
 
@@ -240,7 +240,7 @@ p { font-size:smaller; letter-spacing:1em }
 
 ### 知识点2: 多元素类型选择器
 
-- 定义: 使用多个HTML元素标签作为选择器,用逗号分隔,如h1,h2,h3,h4,h5,h6 { background-color:purple }
+- 定义: 使用多个HTML元素标签作为选择器,用逗号分隔,如`h1,h2,h3,h4,h5,h6 { background-color:purple }`
 - 用法: 选择页面上所列出的多种类型的HTML元素,并对它们应用相同的样式
 - 例子:
 
