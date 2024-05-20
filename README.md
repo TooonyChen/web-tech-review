@@ -37,6 +37,7 @@ Additional functionality:
 - Display of non-HTML documents (e.g., PDF) via plug-ins
 
 **Web Servers**
+
 Basic functionality:
 - Receive HTTP request via TCP
 - Map Host header to specific virtual host (one of many host names sharing an IP address)
