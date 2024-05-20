@@ -12,10 +12,12 @@
 - Browser displays body of response in the client area of the browser window
 
 **Web Browsers**
+
 Primary tasks:
 - Convert web addresses (URL’s) to HTTP requests
 - Communicate with web servers via HTTP
 - Render (appropriately display) documents returned by a server
+
 Standard features:
 - Save web page to disk
 - Find string in page
@@ -26,6 +28,7 @@ Standard features:
 - Choose browser themes (skins)
 - View history of web addresses visited
 - Bookmark favorite pages for easy return
+
 Additional functionality:
 - Execution of scripts (e.g., drop-down menus)
 - Event handling (e.g., mouse clicks)
