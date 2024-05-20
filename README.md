@@ -1,4 +1,47 @@
-# Chapter 1
+![image](https://github.com/TooonyChen/web-tech-review/assets/26252739/f7ec646d-2e51-4ab0-b57f-99d0eac6a6c7)# Chapter 1
+
+**Typical browser-server interaction**
+- User enters Web address in browser
+- Browser uses DNS to locate IP address
+- Browser opens TCP connection to server
+- Browser sends HTTP request over connection
+- Server sends HTTP response to browser over connection
+- Browser displays body of response in the client area of the browser window
+
+**Web Browsers**
+Primary tasks:
+- Convert web addresses (URL’s) to HTTP requests
+- Communicate with web servers via HTTP
+- Render (appropriately display) documents returned by a server
+Standard features:
+- Save web page to disk
+- Find string in page
+- Fill forms automatically (passwords, CC numbers, …)
+- Set preferences (language, character set, cache and HTTP parameters)
+- Modify display style (e.g., increase font sizes)
+- Display raw HTML and HTTP header info (e.g., Last-Modified)
+- Choose browser themes (skins)
+- View history of web addresses visited
+- Bookmark favorite pages for easy return
+Additional functionality:
+- Execution of scripts (e.g., drop-down menus)
+- Event handling (e.g., mouse clicks)
+- GUI for controls (e.g., buttons)
+- Secure communication with servers
+- Display of non-HTML documents (e.g., PDF) via plug-ins
+
+**Web Servers**
+Basic functionality:
+- Receive HTTP request via TCP
+- Map Host header to specific virtual host (one of many host names sharing an IP address)
+- Map Request-URI to specific resource associated with the virtual host
+- File: Return file in HTTP response
+- Program: Run program and return output in HTTP response
+- Map type of resource to appropriate MIME type and use it to set Content-Type header in HTTP response
+- Log information about the request and response
+
+
+
 **知识点1：telnet命令行的用法**
 - 定义：Telnet是一种网络协议，允许用户在本地计算机上使用命令行接口远程登录到远程主机，并执行命令。
 - 用法：telnet [hostname or IP address] [port]。通过telnet命令，用户可以连接到远程服务器并发送各种命令。
