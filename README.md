@@ -1,4 +1,7 @@
-![image](https://github.com/TooonyChen/web-tech-review/assets/26252739/f7ec646d-2e51-4ab0-b57f-99d0eac6a6c7)# Chapter 1
+#
+
+
+## Chapter 1
 
 **Typical browser-server interaction**
 - User enters Web address in browser
@@ -88,7 +91,7 @@ Content-Length: 127
 - 例子：当用户在浏览器中输入URL并按下回车键时，浏览器将发送HTTP请求到相应的Web服务器，服务器将处理请求并返回相应的Web页面或资源，浏览器接收并显示该页面。
 
 
-# Chapter 2
+## Chapter 2
 
 1. 块级元素
    块级元素在浏览器中显示时会独占一行,常用于文档结构和布局。
@@ -216,7 +219,7 @@ Content-Length: 127
 
  
 
-# Chapter 3
+## Chapter 3
 
 **知识点1: 单一元素类型选择器**
 
@@ -266,7 +269,7 @@ h1,h2,h3,h4,h5,h6 { background-color:purple }
 
  
 
-# Chapter 4
+## Chapter 4
 
 好的,根据你提供的Chapter 4 Client-Side Programming-JavaScript幻灯片,以下是你需要复习的JavaScript函数和正则表达式相关知识点:
 
@@ -365,7 +368,7 @@ let emailRegex = /\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}\b/;
 emailRegex.test('test@example.com'); // true
 ```
 
-# Chapter 5
+## Chapter 5
 
 好的,根据你提供的Chapter 5 Host Objects-Browsers and the DOM幻灯片,以下是你需要复习的DOM、HTML内在事件属性onload和window.alert()函数相关知识点:
 
@@ -474,7 +477,7 @@ function show(eltId, URL) {
 
 这个示例展示了如何结合使用HTML和JavaScript来添加交互行为。通过操作DOM元素的属性,可以动态更新网页内容,提高用户体验。
 
-# Chapter 6
+## Chapter 6
 
 **知识点1: Servlet生命周期**
 
